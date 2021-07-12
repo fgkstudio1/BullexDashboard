@@ -1,0 +1,587 @@
+@import "pressets.scss";
+@import "animations.scss";
+@import "colors.scss";
+@import "buttons.scss";
+
+
+.leftSide{
+    position: fixed;
+    left:-40px;
+    bottom:-40px;
+    z-index: 2;
+    path{
+        transition: 0.3s all;
+    }
+    path:hover{
+        filter: brightness(159%);
+        -webkit-filter: brightness(125%);
+    }
+    &:hover{
+        animation: shake 2.5s;
+        animation-iteration-count: infinite;
+    }
+}
+.rightSide{
+    position: absolute;
+    right:-40px;
+    top:-40px;
+    z-index:2;
+    height: 100%;
+    path{
+        transition: 0.3s all;
+    }
+    path:hover{
+        filter: brightness(159%);
+        -webkit-filter: brightness(159%);
+    }
+    &:hover{
+        animation: shake 2.5s;
+        animation-iteration-count: infinite;
+    }
+}
+.rightSide-chart{
+    position: absolute;
+    right:-40px;
+    top:-40px;
+    height: 100%;
+    z-index: 2;
+    path{
+        transition: 0.3s all;
+    }
+    path:hover{
+        filter: brightness(159%);
+        -webkit-filter: brightness(159%);
+    }
+    &:hover{
+        animation: shake 2.5s;
+        animation-iteration-count: infinite;
+    }
+}
+
+// navbar
+.navbar{
+    background-color: transparent;
+    ul{
+        li{
+            a{
+                color: $inactive;
+                margin-right:16px;
+            }
+            a.active{
+                color: $white;
+            }
+        }
+    }
+    button{
+        z-index: 3;
+    }
+    .navbar-toggler{
+        background-color: $primary !important;
+    }
+    .navbar-toggler-icon{
+        color: $white !important;
+    }
+    .navbar-collapse{
+        padding-left:16px !important;
+        margin-bottom:16px;
+    }
+}
+
+// lines
+.v-line{
+    width:6px;
+    background-color: $primary;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:32px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.h-line{
+    height:6px;
+    background-color: $primary;
+    display: block;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+// dashboard
+.dashboard{
+    transition: 0.4s all;
+    transform: translateX(-75px);
+    .dashboard-header{
+        .img{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right:22px;
+        }
+        .text{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    .dashboard-features{
+        .v-line{
+            margin-top:32px;
+        }
+        .v-line1{
+            height:42px;
+        }
+        .v-line2{
+            height:296px;
+        }
+        .v-line3{
+            height:180px;
+        }
+        .v-line4{
+            height:848px;
+        }
+        .v-line5{
+            height:42px;
+        }
+        .v-line6{
+            height:970px;
+        }
+        img{
+            margin-bottom:16px;
+        }
+        .third-col{
+            transform: translateY(-270px);
+        }
+    }
+    .logoGif{
+        transform: translateX(-250px);
+        position: relative;
+        top:-920px;
+        margin-bottom: -920px;
+        img{
+            width: 1600px;
+        }
+    }
+    .dashboard-fees{
+        .v-line2{
+            height:180px;
+        }
+        .v-line4{
+            margin-top:32px;
+            height:450px;
+        }
+        .v-line5{
+            margin-top:32px;
+            height:40px;
+        }
+        .v-line6{
+            margin-top:32px;
+            height:450px;
+        }
+        img{
+            margin-bottom:16px;
+        }
+        .first-col{
+            transform: translateY(-270px);
+            margin-bottom: -270px;
+        }
+        .second-col{
+            transform: translateY(-80px);
+            margin-bottom: -80px;
+        }
+        .third-col{
+            transform: translateY(-270px);
+            margin-bottom: -270px;
+        }
+    }
+    .dashboard-footer{
+        .second-col{
+            padding-left:64px;
+            border-left: 1px solid $white;
+        }
+    }
+}
+.dashboard-social-medias{
+    padding-top:64px;
+    padding-bottom:64px;
+    a{
+        margin-right:32px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+
+// charts
+.chartTop-bar{
+    width:6px;
+    background-color: $primary;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    z-index:2;
+    height:100px;
+    transition: 0.3s all;
+}
+.chartTop-bar1{
+    position:absolute;
+    top:-68px;
+    left:400px;
+    &:hover{
+        transform:translateY(12px);
+    }
+}
+.chartTop-bar2{
+    position:absolute;
+    top:-36px;
+    left:432px;
+    &:hover{
+        transform:translateY(12px);
+    }
+}
+.chartTop-bar3{
+    position:absolute;
+    top:-78px;
+    left:464px;
+    &:hover{
+        transform:translateY(12px);
+    }
+}
+.chart{
+    .chart-features{
+        margin-top:32px;
+        margin-bottom:32px;
+        img{
+            margin-bottom:16px;
+        }
+        .v-line{
+            margin-top:32px;
+            height:64px;
+        }
+    }
+    .chart-graph{
+        .chart-graph-left{
+            display:flex;
+            flex-direction: column;
+            align-items: stretch;
+            .item{
+                margin-bottom:32px;
+            }
+            .h-line{
+                width: 64px;
+                margin-bottom:32px;
+            }
+            .chart-graph-bottom{
+                width: 100%;
+                margin-top:auto;
+                margin-bottom:0;
+                justify-content: left;
+                align-self: flex-end;
+                .item2{
+                    margin-top:16px;
+                    img{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right:16px;
+                    }
+                    p{
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+    .chart-transactions{
+        width:1410px;
+        max-width: 100%;
+        margin-top:84px;
+        margin-left:auto;
+        margin-right:auto;
+        transform:translateX(135px);
+        table{
+            width:100% !important;
+            background-color:$dark-gray;
+            border: 1px solid $border;
+            margin-top:32px;
+        }
+        .borderless td, .borderless th {
+            border: none;
+        }
+    }
+}
+@media (max-width: 1920px){
+    .chart-transactions{
+        padding-left:30px;
+        padding-right:30px;
+        transform:translateX(0) !important;
+        margin-left:auto;
+        margin-right:auto;
+        width:100% !important;
+        max-width: 1200px !important;
+    }
+}
+@media (max-width: 1680px) { 
+    .leftSide{
+        left: -180px;
+    }
+    .rightSide, .rightSide-chart{
+        right: -120px;
+    }
+    .logoGif{
+        transform: translateX(0) !important;
+        text-align: center;
+        margin-left:auto !important;
+        margin-right:auto !important;
+        img{
+            width: 1000px !important;
+        }
+    }
+    #tradingview_50087{
+        width: 100% !important;
+    }
+    #tradingview_50087 div{
+        width: 100% !important;
+    }
+}
+@media (max-width: 1480px) { 
+    .leftSide{
+        left: -260px;
+    }
+    .rightSide, .rightSide-chart{
+        right: -320px;
+    }
+    .dashboard{
+        transform: translateX(0);
+        .dashboard-features{
+            .v-line{
+                margin-top:32px;
+            }
+            .v-line1{
+                height:42px;
+            }
+            .v-line2{
+                height:296px;
+            }
+            .v-line3{
+                height:180px;
+            }
+            .v-line4{
+                height:548px;
+            }
+            .v-line5{
+                height:42px;
+            }
+            .v-line6{
+                height:670px;
+            }
+            img{
+                margin-bottom:16px;
+            }
+            .third-col{
+                transform: translateY(-270px);
+            }
+        }
+    }
+    .chart{
+        transform: translateX(0);
+    }
+    .logoGif{
+        top:-570px !important;
+        img{
+            width: 100% !important;
+        }
+    }
+}
+
+
+
+@media (max-width: 1200px) { 
+    .leftSide{
+        left: -360px;
+    }
+    .rightSide, .rightSide-chart{
+        right: -420px;
+    }
+    .chart-transactions{
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+    .chart-transactions div{
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+}
+@media (max-width: 992px) {
+    .leftSide{
+        left: -360px;
+    }
+    .rightSide, .rightSide-chart{
+        right: -500px;
+    }
+    .dashboard-fees{
+        .second-col{
+            position:relative;
+            top:-120px;
+        }
+        .v-line2{
+            height:310px !important;
+        }
+    }
+    .dashboard-footer{
+        .second-col{
+            border-left:0 !important;
+            padding-left:0 !important;
+            text-align: center;
+            margin-top:32px;
+        }
+    }
+}
+@media (max-width: 768px) { 
+    .dashboard-fees{
+        .second-col{
+            position:relative;
+            top:-200px;
+        }
+        .v-line2{
+            height:390px !important;
+        }
+    }
+    .dashboard-features{
+        .v-line3{
+            visibility: hidden;
+        }
+        .third-col{
+            margin-top:32px;
+        }
+    }
+}
+@media (max-width: 568px){
+    .dashboard-header{
+        text-align: center;
+        .img{
+            width: 50%;
+            margin-bottom:16px;
+            display: block;
+        }
+        .text{
+            width: 100%;
+            display: block;
+        }
+    }
+    .dashboard-features{
+        .v-line{
+            margin-top:32px;
+        }
+        .v-line1{
+            height:48px !important;
+        }
+        .v-line2{
+            display: none;
+        }
+        .v-line3{
+            display: none;
+        }
+        .v-line4{
+            height:48px !important;
+        }
+        .v-line5{
+            height:48px !important;
+        }
+        .v-line6{
+            height:48px !important;
+        }
+        img{
+            margin-bottom:16px;
+        }
+        .third-col{
+            transform: translateY(-32px) !important;
+        }
+    }
+    .dashboard-fees{
+        .v-line2{
+            height:48px !important;
+            margin-top:32px !important;
+        }
+        .v-line4{
+            height:48px !important;
+            margin-top:32px !important;
+        }
+        .v-line5{
+            height:48px !important;
+            margin-top:32px !important;
+        }
+        .v-line6{
+            height:48px !important;
+            margin-top:32px !important;
+        }
+        img{
+            margin-bottom:16px;
+        }
+        .first-col{
+            transform: translateY(0px) !important;
+            margin-bottom:0px !important;
+        }
+        .second-col{
+            margin-top:100px !important;
+            transform: translateY(0px) !important;
+            margin-bottom:0px !important;
+        }
+        .third-col{
+            transform: translateY(-200px) !important;
+            margin-bottom:0px !important;
+        }
+    }
+    .logoGif{
+        top:700px !important;
+        img{
+            width: 100% !important;
+        }
+    }
+    .chart-header{
+        text-align: center;
+    }
+    .chart-graph-left{
+        text-align: center !important;
+        margin-bottom:32px;
+        .h-line{
+            margin-left:auto;
+            margin-right: auto;
+        }
+        .item2{
+            img{
+                display: block;
+                margin-bottom:16px;
+                margin-left:16px;
+            }
+            p{
+                width: 100%;
+                display:block;
+            }
+        }
+    }
+    .chartTop-bar1{
+        position:absolute;
+        top:-68px;
+        left:120px;
+        &:hover{
+            transform:translateY(12px);
+        }
+    }
+    .chartTop-bar2{
+        position:absolute;
+        top:-36px;
+        left:152px;
+        &:hover{
+            transform:translateY(12px);
+        }
+    }
+    .chartTop-bar3{
+        position:absolute;
+        top:-78px;
+        left:184px;
+        &:hover{
+            transform:translateY(12px);
+        }
+    }
+}
+

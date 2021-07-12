@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Bullex Dashboard</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+</head>
+
+<body>
+
+    <!-- storing the javascript values-->
+    <input type="hidden" id="blxbnb">
+    <input type="hidden" id="bnbusd">
+    <input type="hidden" id="blxusd">
+
+    <div class="leftSide">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="548" height="404" viewBox="0 0 548 404">
+            <defs>
+                <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" y2="-0.065"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#000b3e" />
+                    <stop offset="1" stop-color="#00124b" />
+                </linearGradient>
+                <clipPath id="clip-iPhone_12_12_Pro_1">
+                    <rect width="548" height="404" />
+                </clipPath>
+            </defs>
+            <g id="iPhone_12_12_Pro_1" data-name="iPhone 12, 12 Pro – 1" clip-path="url(#clip-iPhone_12_12_Pro_1)">
+                <g id="Group_108" data-name="Group 108" transform="translate(-54.167)">
+                    <path id="Path_119" data-name="Path 119" d="M1117.333,9201.011v191.117l57.974-202.377Z"
+                        transform="translate(-1117.333 -9189.751)" fill="url(#linear-gradient)" />
+                    <path id="Path_110" data-name="Path 110" d="M926.667,9246.959l215.411-127.83-34.687,121.682Z"
+                        transform="translate(-792.852 -8951.801)" fill="#014974" />
+                    <path id="Path_111" data-name="Path 111" d="M1075.667,9145.557,1118.551,9039l19.054,106.557Z"
+                        transform="translate(-984.736 -8744.092)" fill="#015c91" />
+                    <path id="Path_112" data-name="Path 112" d="M1089.893,9145.55v-25.919L1223.951,9039l-42.672,106.55Z"
+                        transform="translate(-1089.893 -8744.082)" fill="#014974" />
+                    <path id="Path_113" data-name="Path 113" d="M1079.454,9119.6l62.6,83.354-215.3,126.954Z"
+                        transform="translate(-792.935 -9034.744)" fill="#013f64" />
+                    <path id="Path_114" data-name="Path 114" d="M974.5,9190.085l51.209,139.268,152.4-210.1Z"
+                        transform="translate(-891.916 -9034.067)" fill="#2cb1ff" />
+                    <path id="Path_115" data-name="Path 115" d="M1090.778,9171.793l132.843,87.676L1173.362,9120.4Z"
+                        transform="translate(-1090.778 -8965.038)" fill="#015c91" />
+                    <path id="Path_116" data-name="Path 116" d="M1090.25,9228.16l133.228-82.367L1090.25,9057.5Z"
+                        transform="translate(-1090.25 -8851.076)" fill="#014974" />
+                    <path id="Path_117" data-name="Path 117" d="M1081.482,9224.5l87.208,135.031-62.169,20.946Z"
+                        transform="translate(-1023.936 -9224.317)" fill="#0190e4" />
+                    <path id="Path_118" data-name="Path 118" d="M974.25,9240.258l181.675,12.24-141.586,49.652Z"
+                        transform="translate(-869.828 -9166.936)" fill="#014974" />
+                    <path id="Path_120" data-name="Path 120" d="M1128.75,9391.857l82.914-48.525-25.7-155.082"
+                        transform="translate(-1128.75 -9187.079)" fill="#015181" />
+                    <path id="Path_107" data-name="Path 107" d="M1516.113,9046.035,1513,8930l2.065.25,126.111,115.787Z"
+                        transform="translate(-1199.936 -8641.495)" fill="#014974" />
+                    <path id="Path_106" data-name="Path 106" d="M1630.6,9091.406,1646.627,8927l-143.96,48.064Z"
+                        transform="translate(-1189.338 -8686.834)" fill="#2cb1ff" />
+                    <path id="Path_109" data-name="Path 109" d="M880.117,9125.089l-35.141,120.464,143.66-47.4Z"
+                        transform="translate(-531.769 -8957.322)" fill="#0190e4" />
+                    <path id="Path_108" data-name="Path 108"
+                        d="M1624.085,9042.99l-18.418-107.032L1785.545,8930l2.831,112.989Z"
+                        transform="translate(-1472.095 -8641.525)" fill="#013f64" />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div class="rightSide">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="548" height="2544" viewBox="0 0 548 2544">
+            <defs>
+                <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" y2="-0.065"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#000b3e" />
+                    <stop offset="1" stop-color="#00124b" />
+                </linearGradient>
+                <linearGradient id="linear-gradient-2" x1="0.5" y1="1.123" x2="0.5" y2="-0.164"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#002d83" />
+                    <stop offset="1" stop-color="#003fa9" />
+                </linearGradient>
+                <linearGradient id="linear-gradient-3" x1="0.887" y1="1.174" x2="-0.108" y2="-0.118"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#00287d" />
+                    <stop offset="1" stop-color="#0040a9" />
+                </linearGradient>
+                <linearGradient id="linear-gradient-4" x1="0.798" y1="1.047" x2="0.257" y2="-0.112"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#001453" />
+                    <stop offset="1" stop-color="#00236d" />
+                </linearGradient>
+                <linearGradient id="linear-gradient-5" x1="0.707" y1="1.058" x2="0.433" y2="-0.106"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#00195d" />
+                    <stop offset="1" stop-color="#001d67" />
+                </linearGradient>
+                <linearGradient id="linear-gradient-6" x1="0.327" y1="1.009" x2="1.057" y2="-0.092"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#002879" />
+                    <stop offset="1" stop-color="#001a5f" />
+                </linearGradient>
+                <linearGradient id="linear-gradient-7" x1="1" y1="0.592" x2="-0.147" y2="0.06"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#0046b2" />
+                    <stop offset="1" stop-color="#003493" />
+                </linearGradient>
+                <linearGradient id="linear-gradient-8" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#00124c" />
+                    <stop offset="1" stop-color="#00124b" />
+                </linearGradient>
+                <linearGradient id="linear-gradient-9" y1="0" y2="1.065" xlink:href="#linear-gradient" />
+                <linearGradient id="linear-gradient-10" y1="-0.123" y2="1.164" xlink:href="#linear-gradient-2" />
+                <linearGradient id="linear-gradient-11" x1="0.887" y1="-0.174" x2="-0.108" y2="1.118"
+                    xlink:href="#linear-gradient-3" />
+                <linearGradient id="linear-gradient-12" x1="0.707" y1="-0.058" x2="0.433" y2="1.106"
+                    xlink:href="#linear-gradient-5" />
+                <linearGradient id="linear-gradient-13" x1="0.327" y1="-0.009" x2="1.057" y2="1.092"
+                    xlink:href="#linear-gradient-6" />
+                <linearGradient id="linear-gradient-14" y1="0" y2="1" xlink:href="#linear-gradient-8" />
+                <linearGradient id="linear-gradient-17" x1="0.302" y1="-0.16" x2="1.06" y2="1.096"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#001f67" />
+                    <stop offset="1" stop-color="#003796" />
+                </linearGradient>
+                <linearGradient id="linear-gradient-18" x1="0.068" y1="-0.067" x2="0.66" y2="0.961"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#002673" />
+                    <stop offset="1" stop-color="#004abe" />
+                </linearGradient>
+                <linearGradient id="linear-gradient-19" x1="0.089" y1="-0.145" x2="1.087" y2="1.19"
+                    gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#001651" />
+                    <stop offset="1" stop-color="#00154e" />
+                </linearGradient>
+                <clipPath id="clip-rightSide_1">
+                    <rect width="548" height="2544" />
+                </clipPath>
+            </defs>
+            <g id="rightSide_1" data-name="rightSide – 1" clip-path="url(#clip-rightSide_1)">
+                <g id="Group_108" data-name="Group 108" transform="translate(-1390 -86)">
+                    <g id="Group_97" data-name="Group 97" transform="translate(1431.257 110.032)">
+                        <path id="Path_119" data-name="Path 119" d="M1265.914,9218.608v489.808l-148.58-518.663Z"
+                            transform="translate(-95.07 -9189.753)" fill="url(#linear-gradient)" />
+                        <path id="Path_106" data-name="Path 106" d="M1544.885,9339.747l-40.552-407.556,365.152,120.086Z"
+                            transform="translate(-1503.885 -8311.778)" fill="#014f7c" />
+                        <path id="Path_107" data-name="Path 107"
+                            d="M1833.524,9219.54l6.384-287.009-3.7-1.854L1513,9219.54Z"
+                            transform="translate(-1472.996 -8190.646)" fill="#0170b1" />
+                        <path id="Path_108" data-name="Path 108"
+                            d="M2026.721,9217.043,2074,8940.395,1612.422,8930l-6.755,287.038Z"
+                            transform="translate(-1245.407 -8188.149)" fill="#24aeff" />
+                        <path id="Path_109" data-name="Path 109" d="M1123.076,9124l89.813,311.766L845,9314.263Z"
+                            transform="translate(-845 -8694.037)" fill="#24aeff" />
+                        <path id="Path_110" data-name="Path 110" d="M1473.873,9445.833l-546.1-323,89.1,311.794Z"
+                            transform="translate(-650.904 -8691.634)" fill="#0170b1" />
+                        <path id="Path_111" data-name="Path 111" d="M1234.406,9312.094,1124.5,9039l-48.833,273.092Z"
+                            transform="translate(-296.605 -8283.199)" fill="url(#linear-gradient-2)" />
+                        <path id="Path_112" data-name="Path 112"
+                            d="M1433.373,9311.448v-66.424L1090,9039l109.161,272.447Z"
+                            transform="translate(-262.528 -8282.554)" fill="url(#linear-gradient-3)" />
+                        <path id="Path_113" data-name="Path 113" d="M1084.931,9108.21,926.75,9332.734l553.9,325.078Z"
+                            transform="translate(-650.645 -8901.644)" fill="#014f7c" />
+                        <path id="Path_114" data-name="Path 114" d="M1496.314,9300.79l-131.242,356.925L974.5,9119.252Z"
+                            transform="translate(-537.122 -8900.943)" fill="url(#linear-gradient-4)" />
+                        <path id="Path_115" data-name="Path 115" d="M1431.695,9251.721,1090.25,9477.164,1220.042,9120Z"
+                            transform="translate(-260.851 -8721.843)" fill="#010837" />
+                        <path id="Path_116" data-name="Path 116"
+                            d="M1431.695,9494.878,1090.25,9283.784,1431.695,9057.5Z"
+                            transform="translate(-260.851 -8528.465)" fill="url(#linear-gradient-5)" />
+                        <path id="Path_117" data-name="Path 117" d="M1304.316,9224.5,1082.25,9569l157.9,55.247Z"
+                            transform="translate(-280.954 -9224.034)" fill="url(#linear-gradient-6)" />
+                        <path id="Path_118" data-name="Path 118" d="M1439.858,9242,974.25,9273.368l363.679,124Z"
+                            transform="translate(-536.633 -9054.086)" fill="url(#linear-gradient-7)" />
+                        <path id="Path_120" data-name="Path 120" d="M1341.247,9710.064l-212.5-124.359,65.86-397.454"
+                            transform="translate(-170.403 -9185.251)" fill="url(#linear-gradient-8)" />
+                    </g>
+                    <g id="Group_96" data-name="Group 96" transform="translate(1578.815 -5.037)">
+                        <path id="Path_119-2" data-name="Path 119" d="M1192.421,9437.282V9189.75l-75.087,262.115Z"
+                            transform="translate(-600.148 -8927.871)" fill="url(#linear-gradient-9)" />
+                        <path id="Path_110-2" data-name="Path 110" d="M1205.664,9119.128l-279,165.564,44.925-157.6Z"
+                            transform="translate(-786.706 -8977.419)" fill="#018bdc" />
+                        <path id="Path_111-2" data-name="Path 111" d="M1155.888,9039l-55.543,138.01L1075.667,9039Z"
+                            transform="translate(-681.387 -9034.975)" fill="url(#linear-gradient-10)" />
+                        <path id="Path_112-2" data-name="Path 112" d="M1263.522,9039v33.568L1089.893,9177l55.267-138Z"
+                            transform="translate(-671.25 -9034.975)" fill="url(#linear-gradient-11)" />
+                        <path id="Path_113-2" data-name="Path 113" d="M1007.825,9391.983,926.75,9284.025,1205.6,9119.6Z"
+                            transform="translate(-786.647 -8977.89)" fill="#014f7c" />
+                        <path id="Path_114-2" data-name="Path 114" d="M1238.206,9299.627l-66.325-180.377L974.5,9391.37Z"
+                            transform="translate(-752.896 -8977.703)" fill="#0190e4" />
+                        <path id="Path_115-2" data-name="Path 115"
+                            d="M1262.833,9233.952,1090.778,9120.4l65.094,180.124Z"
+                            transform="translate(-670.561 -8977.742)" fill="#010837" />
+                        <path id="Path_116-2" data-name="Path 116" d="M1262.8,9057.5,1090.25,9164.178,1262.8,9278.535Z"
+                            transform="translate(-670.532 -9021.897)" fill="url(#linear-gradient-12)" />
+                        <path id="Path_117-2" data-name="Path 117" d="M1194.432,9426.519l-112.95-174.89L1162,9224.5Z"
+                            transform="translate(-676.691 -8902.762)" fill="url(#linear-gradient-13)" />
+                        <path id="Path_118-2" data-name="Path 118" d="M1209.552,9320.418l-235.3-15.853,183.38-64.308Z"
+                            transform="translate(-752.525 -8891.39)" fill="#2cb1ff" />
+                        <path id="Path_120-2" data-name="Path 120" d="M1236.138,9188.25,1128.75,9251.1l33.283,200.859"
+                            transform="translate(-643.866 -8929.479)" fill="url(#linear-gradient-14)" />
+                        <path id="Path_107-2" data-name="Path 107"
+                            d="M1674.982,8930l4.031,150.287-2.675-.323L1513,8930Z"
+                            transform="translate(-1492.215 -8929.955)" fill="#0190e4" />
+                        <path id="Path_106-2" data-name="Path 106" d="M1523.429,8927l-20.762,212.936,186.455-62.253Z"
+                            transform="translate(-1502.667 -8927)" fill="#015181" />
+                        <path id="Path_109-2" data-name="Path 109" d="M985.528,9281.11l45.514-156.022L844.977,9186.48Z"
+                            transform="translate(-844.43 -8974.406)" fill="#018cdf" />
+                        <path id="Path_108-2" data-name="Path 108"
+                            d="M1818.452,8930l23.855,138.628-232.975,7.714L1605.666,8930Z"
+                            transform="translate(-1423.035 -8925.977)" fill="#23adff" />
+                    </g>
+                    <g id="Group_102" data-name="Group 102" transform="translate(2377.31 1507.92) rotate(90)">
+                        <path id="Path_119-3" data-name="Path 119" d="M1323.364,9692.531l-62-513.781-146,469.98Z"
+                            transform="translate(-125.284 -8687.422)" fill="#0190e4" />
+                        <path id="Path_110-3" data-name="Path 110" d="M1461.831,9119.128l-535.164,317.58,86.174-302.3Z"
+                            transform="translate(-658.199 -8847.306)" fill="#24aeff" />
+                        <path id="Path_111-3" data-name="Path 111" d="M1229.545,9039,1123,9303.727,1075.667,9039Z"
+                            transform="translate(-319.372 -9031.278)" fill="url(#linear-gradient-10)" />
+                        <path id="Path_112-3" data-name="Path 112"
+                            d="M1422.944,9039v64.391L1089.893,9303.7,1195.906,9039Z"
+                            transform="translate(-286.865 -9031.278)" fill="url(#linear-gradient-11)" />
+                        <path id="Path_113-3" data-name="Path 113" d="M1082.265,9642.079,926.75,9435l534.891-315.4Z"
+                            transform="translate(-658.009 -8847.776)" fill="#0170b1" />
+                        <path id="Path_114-3" data-name="Path 114"
+                            d="M1480.334,9465.243l-127.223-345.992L974.5,9641.224Z"
+                            transform="translate(-549.425 -8847.74)" fill="#014f7c" />
+                        <path id="Path_115-3" data-name="Path 115"
+                            d="M1420.809,9338.217,1090.778,9120.4l124.86,345.508Z"
+                            transform="translate(-284.73 -8846.763)" fill="#0170b1" />
+                        <path id="Path_116-3" data-name="Path 116"
+                            d="M1421.238,9057.5,1090.25,9262.125l330.988,219.357Z"
+                            transform="translate(-285.159 -8989.208)" fill="#0190e4" />
+                        <path id="Path_117-3" data-name="Path 117" d="M1295.1,9569.327l-213.623-292.79,154.452-52.037Z"
+                            transform="translate(-305.025 -8607.352)" fill="#24aeff" />
+                        <path id="Path_118-3" data-name="Path 118" d="M1437.69,9394.379l-463.44-30.768L1326,9240.258Z"
+                            transform="translate(-548.943 -8571.069)" fill="#0190e4" />
+                        <path id="Path_120-3" data-name="Path 120" d="M1334.739,9183.25,1128.75,9308.8l59.656,344.724"
+                            transform="translate(-198.66 -8691.882)" fill="#014f7c" />
+                        <path id="Path_107-3" data-name="Path 107"
+                            d="M1823.708,8930l7.732,288.275-5.132-.619L1513,8930Z"
+                            transform="translate(-1473.13 -8929.917)" fill="url(#linear-gradient-17)" />
+                        <path id="Path_106-3" data-name="Path 106" d="M1542.493,8927l-39.826,408.447,357.652-119.412Z"
+                            transform="translate(-1502.667 -8926.999)" fill="url(#linear-gradient-18)" />
+                        <path id="Path_109-3" data-name="Path 109" d="M1114.578,9424.365l87.3-299.277-356.9,117.762Z"
+                            transform="translate(-843.928 -8836.055)" fill="#0190e4" />
+                        <path id="Path_108-3" data-name="Path 108"
+                            d="M2013.826,8930l45.759,265.912L1612.7,9210.71,1605.666,8930Z"
+                            transform="translate(-1255.348 -8922.281)" fill="url(#linear-gradient-19)" />
+                    </g>
+                    <path id="Path_124" data-name="Path 124" d="M1512.121,12642.926l505,376.2,55.606-376.2H1512.121Z"
+                        transform="translate(-37.743 -11505)" fill="#24aeff" />
+                    <path id="Path_125" data-name="Path 125" d="M1832,12642.926l180,370.407,62.667-370.407Z"
+                        transform="translate(-38.743 -11504)" fill="#0170b1" />
+                    <path id="Path_127" data-name="Path 127" d="M2072.727,12642.926,1925.667,12838,1830,12640.926Z"
+                        transform="translate(-38.743 -11504)" fill="#0190e4" />
+                    <path id="Path_128" data-name="Path 128" d="M1832,13279.5l-320-637.167L2011,13012Z"
+                        transform="translate(-38.743 -11504)" fill="#014f7c" />
+                    <path id="Path_129" data-name="Path 129" d="M1625.333,13436.917l-166.667-434.25L1832,13281.333Z"
+                        transform="translate(-38.743 -11504)" fill="#24aeff" />
+                    <path id="Path_130" data-name="Path 130" d="M1458.667,13002.667l56-361.334L1833.333,13284Z"
+                        transform="translate(-38.743 -11504)" fill="#0190e4" />
+                    <path id="Path_131" data-name="Path 131" d="M1617.558,11708l131.109,340.667L1760,11804Z"
+                        transform="translate(-38.743 -11504)" fill="#24aeff" />
+                    <path id="Path_132" data-name="Path 132" d="M1746.667,12046.667l92-133.334-78.667-108Z"
+                        transform="translate(-38.743 -11504)" fill="#0190e5" />
+                    <path id="Path_133" data-name="Path 133" d="M1469,12235l365.667,118.333-225-215.666Z"
+                        transform="translate(-38.743 -11504)" fill="#0190e4" />
+                    <path id="Path_134" data-name="Path 134" d="M1832,12879v403l181-270Z"
+                        transform="translate(-38.743 -11504)" fill="#0170b1" />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img src="img/navbar-toggle.png" alt="" /></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link active c-h6" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link c-h6" href="chart404.html">Chart</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link c-h6" href="https://swap.bullextoken.com/">Swap</a>
+                </li>
+            </ul>
+
+            <div class="form-inline my-2 my-lg-0" id="prepare" style="z-index:  1000;">
+                <button class="btn btn-light" id="btn-connect">
+                    Connect wallet
+                </button>
+            </div>
+
+            <div class="form-inline my-2 my-lg-0" id="connected" style="display: none">
+
+                <button class="btn btn-light" id="btn-disconnect" style="z-index:  1000;">
+                    Disconnect wallet
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <div class="container">
+            <div class="row dashboard-header">
+                <div class="col-12">
+                    <img src="img/blx.png" alt="" class="img" />
+                    <div class="text">
+                        <p class="c-inactive c-h5">Your BLX Holding</p>
+                        <p class="c-white c-h1" id="showbalance"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row dashboard-features">
+                <div class="col-12 col-sm-4 text-center first-col">
+                    <div class="v-line v-line1"> </div>
+                    <img src="img/bnb.png" alt="" />
+                    <p class="c-inactive c-h5">Total BNB Paid</p>
+                    <p class="c-white c-h3"><span class="totalbnbpaid"></span> <span class="c-gold c-h3">BNB</span></p>
+                    <div class="v-line v-line4"> </div>
+                </div>
+                <div class="col-12 col-sm-4 text-center second-col">
+                    <div class="v-line v-line2"> </div>
+                    <img src="img/payout.png" alt="" />
+                    <p class="c-inactive c-h5">Last Payout</p>
+                    <p class="c-white c-h3"><span class="lastPayout"></span></p>
+                    <div class="v-line v-line5"> </div>
+                </div>
+                <div class="col-12 col-sm-4 text-center third-col">
+                    <div class="v-line v-line3"> </div>
+                    <img src="img/processing.png" alt="" />
+                    <p class="c-inactive c-h5">Payout Loading</p>
+                    <p class="c-white c-h3">Processing 0%</p>
+                    <div class="v-line v-line6"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 logoGif">
+                    <img src="img/logo.gif" alt="" />
+                </div>
+            </div>
+            <div class="row dashboard-fees">
+                <div class="col-12 col-sm-4 text-center first-col">
+                    <img src="img/arrow.png" alt="" />
+                    <p class="c-inactive c-h5">Daily</p>
+                    <p class="c-white c-h3"><span class="dailybnb"></span> <span class="c-gold c-h3">BNB</span></p>
+                    <p class="c-green c-h4"><span class="dailyusd"></span></p>
+                    <div class="v-line v-line4"> </div>
+                </div>
+                <div class="col-12 col-sm-4 text-center second-col">
+                    <div class="v-line v-line2"> </div>
+                    <img src="img/arrow.png" alt="" />
+                    <p class="c-inactive c-h5">Weekly</p>
+                    <p class="c-white c-h3"><span class="weeklybnb"></span> <span class="c-gold c-h3">BNB</span></p>
+                    <p class="c-green c-h4"><span class="weeklyusd"></span></p>
+                    <div class="v-line v-line5"> </div>
+                </div>
+                <div class="col-12 col-sm-4 text-center third-col">
+                    <img src="img/arrow.png" alt="" />
+                    <p class="c-inactive c-h5">Monthly</p>
+                    <p class="c-white c-h3"><span class="monthlybnb"></span> <span class="c-gold c-h3">BNB</span></p>
+                    <p class="c-green c-h4"><span class="monthlyusd"></span></p>
+                    <div class="v-line v-line6"> </div>
+                </div>
+            </div>
+            <div class="row dashboard-footer">
+                <div class="col-12 col-lg-4 text-center first-col">
+                    <img src="img/dashboard-footer.png" alt="" />
+                </div>
+                <div class="col-12 col-lg-8 second-col">
+                    <p class="c-inactive c-h2">TOTAL PAID TO HOLDERS:</p>
+                    <p class="c-white c-h2"><span id="paidtoholders"></span> = <span id="usdtoholders"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="row dashboard-social-medias">
+                <div class="col-12 text-center">
+                    <a href="www.instagram.com/bullextoken">
+                        <img src="img/instagram.png" alt="" />
+                    </a>
+                    <a href="www.twitter.com/bullextoken">
+                        <img src="img/twitter.png" alt="" />
+                    </a>
+                    <a href="https://t.me/bullextoken">
+                        <img src="img/telegram.png" alt="" />
+                    </a>
+                    <a href="https://discord.gg/BApFTxk9">
+                        <img src="img/discord.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>

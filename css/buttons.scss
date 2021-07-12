@@ -1,0 +1,15 @@
+@import "pressets.scss";
+@import "colors.scss";
+
+.c-btn-primary{
+    height:48px;
+    padding-left:32px !important;
+    padding-right:32px !important;
+    font-size:14px !important;
+    font-weight: 500 !important;
+    color: $bg !important;
+    -webkit-border-radius: 16px !important;
+    -moz-border-radius: 16px !important;
+    border-radius: 16px !important;
+    border:0px !important;
+}

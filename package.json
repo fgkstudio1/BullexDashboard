@@ -1,0 +1,28 @@
+{
+  "name": "bullex-dashboard",
+  "version": "1.0.1",
+  "description": "Dashboard for Bullex Token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"this works\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/cheezcharmer/bullex-dash2"
+  },
+  "keywords": [
+    "dashboard"
+  ],
+  "author": "cheezcharmer",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@walletconnect/web3-provider": "^1.4.1",
+    "bootstrap": "^5.0.2",
+    "bootswatch": "^5.0.2",
+    "gsap": "^3.7.0",
+    "jquery": "^3.6.0",
+    "three": "^0.130.1",
+    "web3": "^1.4.0",
+    "web3modal": "^1.9.3"
+  }
+}
